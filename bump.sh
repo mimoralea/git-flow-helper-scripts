@@ -125,6 +125,6 @@ if [[ "$TYPE" == "major" ]] ; then
 fi
 
 if $PUBLISH ; then                                                                               # if commit
-    git flow $TYPE publish $NEW_VERSION > /dev/null
+    git push -u origin $TYPE/$NEW_VERSION > /dev/null
 fi
 
